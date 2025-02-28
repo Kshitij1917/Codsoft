@@ -148,7 +148,7 @@ The ATM Simulation is a Java-based console application that mimics the functiona
 10. The main class that initializes the bank account and ATM, then runs the ATM interface.
 
 # Example Output
-1. Copy
+
 2. ----- ATM Menu -----
 3. 1. Check Balance
 4. 2. Deposit
