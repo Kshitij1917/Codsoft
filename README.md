@@ -202,4 +202,106 @@ java ATMSimulation
 # Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
 
+# Quiz Application
+The Quiz Application is a Java-based console program that simulates a timed quiz. It presents multiple-choice questions to the user, allows them to answer within a specified time limit, and calculates their score based on correct answers. The application is designed to be interactive, user-friendly, and educational.
 
+# Features
+1. Quiz Questions:
+2. A set of predefined questions with multiple-choice options and correct answers.
+3. Questions are stored as QuizQuestion objects.
+4. Timer:
+5. Each question has a time limit (e.g., 10 seconds). If the user does not answer within the time limit, the program moves to the next question.
+6. Question Display:
+7. Questions are displayed one at a time with their respective options.
+8. Answer Submission:
+9. The user selects an option (1-4) to submit their answer.
+10. The program validates the answer and provides immediate feedback.
+11. Score Calculation:
+12. The user's score is calculated based on the number of correct answers.
+13. Result Screen:
+14. At the end of the quiz, the program displays the total number of questions, correct answers, incorrect answers, and the final score.
+
+# How It Works
+1. The program starts by displaying a welcome message and explaining the rules (e.g., time limit per question).
+2. For each question:
+3. The question and its options are displayed.
+4. A timer starts, and the user must answer within the specified time limit.
+5. If the user answers correctly, their score increases. If they answer incorrectly or run out of time, the correct answer is displayed.
+6. After all questions are answered, the program displays the final results, including the total score and a summary of correct/incorrect answers.
+
+# Code Structure
+1. QuizQuestion Class:
+2. Represents a quiz question with its text, options, and correct answer.
+3. Provides methods to access the question, options, and correct answer.
+4. QuizApplication Class:
+5. The main class that runs the quiz.
+6. Uses a Scanner to take user input and an ExecutorService to implement the timer.
+7. Displays questions, handles user answers, and calculates the score.
+
+# Example Output
+1. Welcome to the Quiz!
+2. You have 10 seconds to answer each question.
+
+3. Question 1: What is the capital of France?
+4. 1. London
+5. 2. Paris
+6. 3. Berlin
+7. 4. Madrid
+8. Enter your answer (1-4): 2
+9. Correct!
+
+10. Question 2: Which planet is known as the Red Planet?
+11. 1. Earth
+12. 2. Mars
+13. 3. Jupiter
+15. 4. Saturn
+16. Enter your answer (1-4): 2
+17. Correct!
+
+18. Question 3: What is the largest mammal?
+19. 1. Elephant
+20. 2. Blue Whale
+21. 3. Giraffe
+22. 4. Shark
+23. Enter your answer (1-4): 1
+24. Incorrect! The correct answer was: 2
+
+25. Question 4: Who wrote 'Romeo and Juliet'?
+26. 1. Charles Dickens
+27. 2. William Shakespeare
+28. 3. Mark Twain
+29. 4. Jane Austen
+30. Enter your answer (1-4): 2
+31. Correct!
+
+32. Question 5: What is the chemical symbol for water?
+33. 1. H2O
+34. 2. CO2
+35. 3. O2
+36. 4. NaCl
+37. Enter your answer (1-4): 1
+38. Correct!
+
+39. ----- Quiz Results -----
+40. Total Questions: 5
+41. Correct Answers: 4
+42. Incorrect Answers: 1
+43. Final Score: 4/5
+# How to Run
+1. Ensure you have the Java Development Kit (JDK) installed on your system.
+2. Clone this repository or download the QuizApplication.java file.
+3. Open a terminal or command prompt and navigate to the directory containing the QuizApplication.java file.
+4. Compile the Java file using the following command:
+javac QuizApplication.java
+5. Run the compiled program using:
+java QuizApplication
+6. Follow the on-screen instructions to answer the quiz questions.
+7. Customization
+8. You can extend the program by adding features like:
+9. A larger set of questions.
+10. Difficulty levels (easy, medium, hard).
+11. A graphical user interface (GUI) using Java Swing or JavaFX.
+12. Leaderboard to track high scores.
+
+# Contributing
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
