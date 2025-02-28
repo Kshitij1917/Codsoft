@@ -114,3 +114,92 @@ java StudentGradeCalculator
 
 # Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+# ATM Interface
+The ATM Simulation is a Java-based console application that mimics the functionality of an Automated Teller Machine (ATM). It allows users to perform basic banking operations such as checking their account balance, depositing funds, and withdrawing funds. The program is designed to be user-friendly and includes input validation to ensure smooth and secure transactions.
+
+# Features
+1. Check Balance: Users can view their current account balance.
+2. Deposit Funds: Users can deposit money into their account. The program validates the deposit amount to ensure it is a positive value.
+3. Withdraw Funds: Users can withdraw money from their account. The program validates the withdrawal amount to ensure it is a positive value and does not exceed the available balance.
+4. Exit: Users can exit the ATM interface at any time.
+5. Input Validation: Ensures that all inputs (e.g., deposit and withdrawal amounts) are valid and within acceptable limits.
+6. User-Friendly Interface: Displays a clear menu and provides appropriate feedback for each transaction.
+
+# How It Works
+1. The program starts by initializing a BankAccount with an initial balance.
+2. The ATM class provides a menu with the following options:
+3. Check Balance: Displays the current account balance.
+4. Deposit: Prompts the user to enter a deposit amount and updates the account balance.
+5. Withdraw: Prompts the user to enter a withdrawal amount and updates the account balance if sufficient funds are available.
+6. Exit: Exits the ATM interface.
+7. The program loops until the user chooses to exit.
+
+# Code Structure
+1. BankAccount Class:
+2. Represents the user's bank account.
+3. Contains methods to deposit, withdraw, and checkBalance.
+4. Validates input to ensure deposit and withdrawal amounts are valid.
+5. ATM Class:
+6. Represents the ATM machine.
+7. Displays a menu and handles user input.
+8. Connects to the BankAccount class to perform transactions.
+9. ATMSimulation Class:
+10. The main class that initializes the bank account and ATM, then runs the ATM interface.
+
+# Example Output
+1. Copy
+2. ----- ATM Menu -----
+3. 1. Check Balance
+4. 2. Deposit
+5. 3. Withdraw
+6. 4. Exit
+7. Enter your choice: 1
+8. Current balance: $1000.0
+
+9. ----- ATM Menu -----
+10. 1. Check Balance
+11. 2. Deposit
+12. 3. Withdraw
+13. 4. Exit
+14. Enter your choice: 2
+15. Enter deposit amount: $500
+16. Deposit successful. New balance: $1500.0
+
+17. ----- ATM Menu -----
+18. 1. Check Balance
+19. 2. Deposit
+20. 3. Withdraw
+21. 4. Exit
+22. Enter your choice: 3
+23. Enter withdrawal amount: $200
+24. Withdrawal successful. New balance: $1300.0
+
+25. ----- ATM Menu -----
+26. 1. Check Balance
+27. 2. Deposit
+28. 3. Withdraw
+29. 4. Exit
+30. Enter your choice: 4
+31. Thank you for using the ATM. Goodbye!
+    
+# How to Run
+1. Ensure you have the Java Development Kit (JDK) installed on your system.
+2. Clone this repository or download the ATMSimulation.java file.
+3. Open a terminal or command prompt and navigate to the directory containing the ATMSimulation.java file.
+4. Compile the Java file using the following command:
+javac ATMSimulation.java
+5. Run the compiled program using:
+java ATMSimulation
+6. Follow the on-screen instructions to interact with the ATM.
+7. Customization
+8. You can extend the program by adding features like:
+9. A PIN-based login system for added security.
+10. Transaction history to track deposits and withdrawals.
+11. Support for multiple user accounts.
+12. A graphical user interface (GUI) using Java Swing or JavaFX.
+
+# Contributing
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+
