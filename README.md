@@ -305,3 +305,95 @@ java QuizApplication
 
 # Contributing
 Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
+
+# Course Registration System in Java
+The Course Registration System is a Java-based console application designed to manage course registrations for students. It allows students to view available courses, register for courses, drop courses, and view their registration details. The system is built using object-oriented programming principles and provides a user-friendly interface for managing course enrollments.
+
+# Features
+1. Course Database:
+2. Stores course information such as course code, title, description, capacity, and schedule.
+3. Tracks the number of registered students and available slots for each course.
+4. Student Database:
+5. Stores student information such as student ID, name, and registered courses.
+6. Course Listing:
+7. Displays all available courses with details such as title, description, schedule, and available slots.
+8. Student Registration:
+9. Allows students to register for a course if there are available slots.
+10. Updates the course and student records accordingly.
+11. Course Removal:
+12. Allows students to drop a course they have registered for.
+13. Updates the course and student records accordingly.
+14. Student Details:
+15. Displays a student's registered courses and other details.
+
+# How It Works
+1. The program initializes with a set of predefined courses and students.
+2. The user is presented with a menu of options:
+3. Display Available Courses: Shows all courses with their details and available slots.
+4. Register for a Course: Allows a student to register for a course by entering their student ID and the course code.
+5. Drop a Course: Allows a student to drop a course by entering their student ID and the course code.
+6. Display Student Details: Shows a student's registered courses and other details.
+7. Exit: Exits the program.
+8. The program validates user input and ensures that students cannot register for courses that are full or drop courses they are not registered for.
+
+# Code Structure
+1. Course Class:
+2. Represents a course with attributes such as course code, title, description, capacity, schedule, and registered students.
+3. Provides methods to register and drop students and to check available slots.
+4. Student Class:
+5. Represents a student with attributes such as student ID, name, and registered courses.
+6. Provides methods to register and drop courses.
+7. CourseRegistrationSystem Class:
+8. The main class that runs the course registration system.
+9. Uses a Scanner to take user input and a Map to store courses and students.
+10. Displays the menu, handles user input, and performs the requested operations.
+
+# Example Output
+1. ----- Course Registration System -----
+2. 1. Display Available Courses
+3. 2. Register for a Course
+4. 3. Drop a Course
+5. 4. Display Student Details
+6. 5. Exit
+7. Enter your choice: 1
+8. ----- Available Courses -----
+9. CSCI101 - Introduction to Computer Science
+10. Description: Basic concepts of programming and algorithms.
+11. Schedule: Mon/Wed 10:00 AM - 11:30 AM
+12. Available Slots: 30/30
+13. MATH101 - Calculus I
+14. Description: Introduction to differential and integral calculus.
+15. Schedule: Tue/Thu 1:00 PM - 2:30 PM
+16. Available Slots: 25/25
+17. PHYS101 - Physics I
+18. Description: Fundamentals of mechanics and thermodynamics.
+19. Schedule: Mon/Wed 3:00 PM - 4:30 PM
+20. Available Slots: 20/20
+21. Enter your choice: 2
+22. Enter your Student ID: 1001
+23. Enter the Course Code to register: CSCI101
+24. Registration successful!
+25. Enter your choice: 4
+26. Enter your Student ID: 1001
+27. ----- Student Details -----
+28. Student ID: 1001
+29. Name: Alice Johnson
+30. Registered Courses: [CSCI101]
+31. How to Run
+32. Ensure you have the Java Development Kit (JDK) installed on your system.
+33. Clone this repository or download the CourseRegistrationSystem.java file.
+34. Open a terminal or command prompt and navigate to the directory containing the CourseRegistrationSystem.java file.
+35. Compile the Java file using the following command:
+javac CourseRegistrationSystem.java
+36. Run the compiled program using:
+java CourseRegistrationSystem
+37. Follow the on-screen instructions to interact with the system.
+38. Customization
+39. You can extend the program by adding features like:
+40. A larger set of courses and students.
+41. Input validation for course codes and student IDs.
+42. A graphical user interface (GUI) using Java Swing or JavaFX.
+43. Saving and loading data from a file or database.
+
+# Contributing
+Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
